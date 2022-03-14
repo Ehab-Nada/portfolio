@@ -45,7 +45,7 @@ section {
   min-height: 100vh;
   display: flex;
   align-items: center;
-  background: url("/images/ehab.jpg");
+  background: url("images/ehab.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center 50px;
