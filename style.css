@@ -1,0 +1,344 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+header {
+  background-color: #f0f0f0;
+  width: 100%;
+  position: fixed;
+  z-index: 999;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 100px;
+}
+.logo {
+  text-decoration: none;
+  color: #3a6cf4;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 1.8em;
+}
+.navigation a {
+  text-decoration: none;
+  padding-left: 30px;
+  color: #3a6cf4;
+  font-size: 1.1em;
+  font-weight: 500;
+}
+#bars {
+  display: none;
+}
+.navigation a:hover {
+  color: #601cfc;
+}
+section {
+  padding: 100px 100px;
+}
+.main {
+  min-width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  background: url("../images/ehab.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center 50px;
+  background-attachment: fixed;
+}
+.main h2 {
+  color: white;
+  font-size: 1.4em;
+  font-weight: 500;
+  text-shadow: 4px 4px 5px black;
+}
+.main h2 span {
+  color: #3a6cf4;
+  font-size: 3em;
+  font-weight: 600;
+  display: inline-block;
+  margin-top: 10px;
+}
+.main h3 {
+  color: white;
+  font-size: 2em;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin-top: 10px;
+  margin-bottom: 30px;
+  text-shadow: 3px 3px 4px black, 3px -3px 4px black;
+}
+.main-btn {
+  text-decoration: none;
+  background-color: #3a6cf4;
+  color: white;
+  border-radius: 15px;
+  letter-spacing: 1px;
+  padding: 0.9375em 2.1875em;
+  margin-bottom: 40px;
+  font-size: 1.1em;
+  font-weight: 600;
+  display: inline-block;
+  transition: 0.7s ease;
+}
+.main-btn:hover {
+  background-color: #601cfc;
+  transform: scale(1.1);
+}
+.social-icons a {
+  text-decoration: none;
+  font-size: 1.7em;
+  padding-right: 30px;
+  display: inline-block;
+  color: white;
+  transition: 0.2s ease;
+}
+.social-icons a:hover {
+  transform: scale(1.5);
+}
+.title {
+  display: flex;
+  justify-content: center;
+  color: #3a6cf4;
+  font-size: 2.2em;
+  font-weight: 800;
+  margin-bottom: 30px;
+}
+.content {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.card {
+  background-color: white;
+  width: 21.25em;
+  box-shadow: 0 5px 25px rgba(1 1 1 / 15%);
+  border-radius: 10px;
+  padding: 25px;
+  margin: 15px;
+  transition: 0.7s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.card:hover {
+  transform: scale(1.1);
+}
+.card .icon img {
+  width: 40%;
+}
+.card .icon {
+  display: flex;
+  justify-content: center;
+}
+.info {
+  text-align: center;
+}
+.info h3 {
+  color: #3a6cf4;
+  font-weight: 700;
+  font-size: 1.2em;
+  margin: 15px;
+}
+.projects {
+  background-color: #000016;
+}
+.project-content {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+.project-card {
+  background-color: white;
+  border-radius: 15px;
+  width: 21.25em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 15px;
+  padding: 25px;
+  transition: 0.7s ease;
+}
+.project-card:hover {
+  transform: scale(1.1);
+}
+.project-card:hover .project-image {
+  opacity: 0.8;
+}
+
+.project-card .project-image {
+  position: relative;
+}
+.project-card .project-image .laptop {
+  width: 18em;
+  height: 18.1em;
+  z-index: -1;
+}
+.project-card .project-image .mobile {
+  width: 8em;
+  position: absolute;
+  top: 9em;
+  right: 0.4em;
+  z-index: 2;
+}
+.project-card .project-image .lap {
+  position: absolute;
+  width: 13.9em;
+  height: 8.4em;
+  top: 3.95em;
+  right: 2.1em;
+}
+.project-card .project-image .mob {
+  position: absolute;
+  width: 3.8em;
+  height: 6.7em;
+  top: 9.6em;
+  right: 2.5em;
+}
+.project-card .project-title p {
+  color: #3a6cf4;
+  font-weight: 700;
+  font-size: 1.6em;
+  margin-bottom: 10px;
+}
+.project-card .project-title .git {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+.git a {
+  text-decoration: none;
+  color: white;
+  background-color: #3a6cf4;
+  padding: 13px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  transition: 0.7s ease;
+}
+.git a:hover {
+  background-color: #601cfc;
+  transform: scale(1.1);
+}
+.contact .icon {
+  font-size: 4.5em;
+  color: #3a6cf4;
+}
+.contact .info h3 {
+  color: #000;
+}
+.contact .info a {
+  font-size: 1.5em;
+  text-decoration: none;
+  color: #3a6cf4;
+}
+.footer {
+  background-color: #000016;
+  color: white;
+  padding: 2em;
+  display: flex;
+  justify-content: space-between;
+}
+.footer .footer-title {
+  font-size: 1.3em;
+  font-weight: 600;
+}
+.footer-title span {
+  color: #3a6cf4;
+}
+.footer .social-icons a {
+  font-size: 1.3em;
+  padding: 0 12px 0 0;
+}
+@media screen and (max-width: 1750px) {
+  .main h2 {
+    font-size: 1.4em;
+  }
+  .main h2 span {
+    font-size: 2.6em;
+  }
+  .main h3 {
+    font-size: 1.5em;
+  }
+}
+@media screen and (max-width: 1023px) {
+  header {
+    padding: 12px 40px;
+  }
+  .navigation a {
+    padding-left: 10px;
+  }
+  .title {
+    font-size: 1.8em;
+  }
+  .section {
+    padding: 80px 20px;
+  }
+  .main h2 span {
+    font-size: 1.5em;
+  }
+  .main h3 {
+    font-size: 1.6em;
+  }
+}
+@media screen and (max-width: 641px) {
+  .navigation {
+    display: none;
+  }
+  .navigation-res {
+    display: block;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    top: 58px;
+    right: 40px;
+    background-color: #f0f0f0;
+  }
+  .navigation-res a {
+    padding: 10px 15px;
+    font-size: 1.5em;
+    font-weight: 600;
+  }
+  .navigation-res a:hover {
+    background-color: #ffffff;
+  }
+
+  #bars {
+    display: block;
+    font-size: 2em;
+    color: #3a6cf4;
+  }
+  body {
+    font-size: 12px;
+  }
+  section {
+    padding: 30px 30px;
+  }
+  .main-content h2 {
+    font-size: 0.8em;
+  }
+  .main-content h3 {
+    font-size: 1.4em;
+  }
+}
+@media screen and (max-width: 350px) {
+  body {
+    font-size: 10px;
+  }
+  section {
+    padding: 20px 20px;
+  }
+  .footer {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+}
